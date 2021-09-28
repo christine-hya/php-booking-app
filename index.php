@@ -1,4 +1,4 @@
-<? session_start();?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,7 @@
 
   <select name="hotel">
     <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
-    <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
+    <option value="The Cheap Hotel" name="CheapHotel">The Cheap Hotel</option>
   </select>
   <br>
 
@@ -29,10 +29,6 @@
 
   <label for="emailAddress">Email Address</label>
   <input type="text" name="emailAddress">
-  <br>
-
-  <label for="durationStay">Duration of stay</label>
-  <input type="number" name="durationStay">
   <br>
 
   <label for="checkInDate">Check-in Date</label>
