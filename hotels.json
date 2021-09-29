@@ -1,0 +1,22 @@
+[
+    {
+        "": "<img style='width:150px;' src='images\/the-commodore-hotel.jpg' alt='The Rustic Hotel'>",
+        "Name": "The Commodore Hotel",
+        "Description": "Upmarket hotel with a view of the ocean and private beach access.",
+        "Pool": "Yes",
+        "WiFi": "Yes",
+        "Ocean view": "Yes",
+        "Pets allowed": "No",
+        "button": "<form action='email.php' method='post'><button>Book<\/button><\/form>"
+    },
+    {
+        "": "<img style='width:150px;' src='images\/the-rustic-hotel.jpg' alt='The Rustic Hotel'>",
+        "Name": "The Rustic Hotel",
+        "Description": "Friendly and down-to-earth accommodation close to public beaches, shops and nightlife.",
+        "Pool": "No",
+        "WiFi": "Yes",
+        "Ocean view": "Yes",
+        "Pets allowed": "Yes",
+        "button": "<form action='email.php' method='post'><button>Book<\/button><\/form>"
+    }
+]

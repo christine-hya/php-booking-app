@@ -1,0 +1,11 @@
+{
+    "hotel": "The Rustic Hotel",
+    "name": "Christine",
+    "surname": "Hogg",
+    "emailAddress": "wordsbychristinehogg@gmail.com",
+    "durationStay": null,
+    "checkInDate": "2021-09-30",
+    "checkOutDate": "2021-10-04",
+    "numberOfDays": "4",
+    "total": 1400
+}
