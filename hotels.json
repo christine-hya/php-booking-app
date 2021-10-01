@@ -1,13 +1,13 @@
 [
     {
-        "": "<img style='width:150px;' src='images\/the-commodore-hotel.jpg' alt='The Rustic Hotel'>",
+        "": "<img style='width:150px;' src='images\/the-commodore-hotel.jpg' alt='The Commodore Hotel'>",
         "Name": "The Commodore Hotel",
         "Description": "Upmarket hotel with a view of the ocean and private beach access.",
         "Pool": "Yes",
         "WiFi": "Yes",
         "Ocean view": "Yes",
         "Pets allowed": "No",
-        "button": "<form action='email.php' method='post'><button>Book<\/button><\/form>"
+        "button": "<form action='email.php' method='post'><button class='button'>Book<\/button><\/form>"
     },
     {
         "": "<img style='width:150px;' src='images\/the-rustic-hotel.jpg' alt='The Rustic Hotel'>",
@@ -17,6 +17,6 @@
         "WiFi": "Yes",
         "Ocean view": "Yes",
         "Pets allowed": "Yes",
-        "button": "<form action='email.php' method='post'><button>Book<\/button><\/form>"
+        "button": "<form action='email.php' method='post'><button class='button'>Book<\/button><\/form>"
     }
 ]

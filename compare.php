@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+</body>
+</html>
+
 <?php
 
 $jsonHotels = file_get_contents('hotels.json');
@@ -19,7 +36,7 @@ $hotelName = $userInfo['hotel'];
             break;
         case 'The Commodore Hotel':
         $result = $numberOfDays*350;
-        echo "You are booking The Commodore Hotel for ". $numberOfDays . " nights at R" .$total. ". The Rustic Hotel is R" . $result . " for the same amount of nights. Compare the features below and confirm.
+        echo "You are booking The Commodore Hotel for ". $numberOfDays . " nights at R" .$total. ". The Rustic Hotel is R" . $result . " for the same amount of nights.
         <br>Are you sure you want to go ahead? Compare the features below and confirm.";
             break;
     }

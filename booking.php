@@ -1,6 +1,21 @@
 <?php 
-session_start();
+session_start();?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+
+
+<?php
 $_SESSION['hotel'] = $_POST['hotel'];
 $_SESSION['name'] = $_POST['name'];
 $_SESSION['surname'] = $_POST['surname'];
@@ -82,7 +97,7 @@ class Booking {
         echo "<br>";
         echo "<form action='compare.php' method'post'>";
         echo "<input type='hidden' name='hoteltoCompare'>";
-        echo "<button>Compare</button>";
+        echo "<button class='button'>Compare</button>";
         echo "</form>";       
     }
 }
@@ -103,8 +118,31 @@ else {
 $_SESSION['numberOfDays'] = $_POST['numberOfDays'];
 $_SESSION['total'] = $_POST['total'];
 file_put_contents('userinfo.json', json_encode($_SESSION, JSON_PRETTY_PRINT));
-
-// print_r($_POST);
  
 ?>
 
+<body>
+<div class="container">
+  <div class="grid">
+    <div class="cell">
+      <img src="images/holiday-gallery-2.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/holiday-gallery-3.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/holiday-gallery-6.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/holiday-gallery-5.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/holiday-gallery-4.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/holiday-gallery-9.jpg" class="responsive-image" />
+    </div>
+  </div>
+</div>
+</body>
+</html>
