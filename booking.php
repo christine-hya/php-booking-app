@@ -84,7 +84,7 @@ class Booking {
     }
 
     public function displayBookingDetails() {
-        echo "Hi ". $this->getName();
+        echo "<div class='booking-message'>Hi ". $this->getName();
         echo " " . $this->getSurname();
         echo "<br>";
         echo "You are booking: ". $this->hotelName;
@@ -97,8 +97,8 @@ class Booking {
         echo "<br>";
         echo "<form action='compare.php' method'post'>";
         echo "<input type='hidden' name='hoteltoCompare'>";
-        echo "<button class='button'>Compare</button>";
-        echo "</form>";       
+        echo "<br><button class='button'>Compare</button>";
+        echo "</form></div>";       
     }
 }
 

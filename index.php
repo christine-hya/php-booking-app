@@ -25,76 +25,152 @@
 
 <div id="background"></div>
 
+<!--BOOKING FORM GRID-->
+
 <div class="booking-form-container">
 
 <form class="booking-form" action="booking.php" method="post">
 
+<div class="bookingform-grid-container">
+<div class="item-a">
  <label for="hotel">Choose a hotel:</label>
-
   <select name="hotel">
     <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
     <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
   </select>
-  <br>
+  <!-- <br> -->
+  </div>
+
+  <div class="item-b">
   <label for="name">First Name</label>
   <input type="text" name="name" placeholder="Your name">
-  
+  </div>
+
+  <div class="item-c">
   <label for="surname">Surname</label>
   <input type="text" name="surname" placeholder="Your surname">
-  <br>
+  <!-- <br> -->
+  </div>
 
+  <div class="item-d">
   <label for="emailAddress">Email Address</label>
-  <input type="text" name="emailAddress" placeholder="Your email address">
-  <br>
+  <input type="text" name="emailAddress" placeholder="Your email address" class="email">
+  <!-- <br> -->
+ </div>
 
   <input type="hidden" name="numberOfDays">
 
-  <label for="checkInDate">Check-in Date</label>
-  <input class="font-lighter" type="date" name="checkInDate">
-  <br>
+  <div class="item-e">
+  <label for="checkInDate">Arrival</label>
+  <input class="font-lighter date-picker" type="date" name="checkInDate">
+  <!-- <br> -->
+  </div>
 
-  <label for="checkOutDate">Check-out Date</label>
-  <input class="font-lighter" type="date" name="checkOutDate">
-  <br><br>
+  <div class="item-f">
+  <label for="checkOutDate">Departure</label>
+  <input class="font-lighter date-picker" type="date" name="checkOutDate">
+  <!-- <br><br> -->
+  </div>
 
+  <div class="item-g">
   <input class="button" type="submit">
+  </div>
 
+  </div>
 </form> 
 
 </div>
 
 <br><br><br>
-       
- <!--DISPLAY HOTELS-->
-<table class="hotel-display">
-  <tr>
+<!--HOTELS-->
 
-<?php
-$size = count($hotels);
+<div class="card-container">
+    <div class="flex-container">
 
-for($i = 0; $i < $size; $i++)
-{
-  echo "<td>";
-    foreach($hotels[$i] as $key => $value) {
-      if ($key == '') {
-        echo $value . "<br>";
-      }    
-      else if ($key === 'button'){
-        echo "<br>";
-      }
-      else {
-      
-        echo $key . ": " . $value . "<br>";
-      }
-    }
-    echo "</td>";
-}
+<!--CARD 1-->
+<div class="card">
+<div class="card-image" style="background-image: url(images/the-commodore-hotel.jpg)"></div>
+  <div class="card-content">
+  
+    <h1>The Commodore Hotel</h1>
+    <div class="subtitle">A luxury retreat</div>
+    <p>
+    Upmarket hotel with a view of the ocean and private beach access. The Commodore Hotel is for those seeking a luxury
+    experience and a truly relaxing time away.<br>
+    Pool: Yes<br>
+    WiFi: Yes<br>
+    Ocean view: Yes<br>
+    Pets allowed: No<br>
+    </p>
 
-echo $hotels['0']['0'];
-?>
 
-</tr>
-</table>
+    <div class="card-details">
+      <div class="card-details-inner">
+        <div class="read-more">
+          <a class="button-2" href="https://en.wikivoyage.org/wiki/Chicago">View Gallery</a>
+        </div>
+        <div class="options">
+          <div class="comments">
+            <a href="#!">
+              <i class="fa fa-comments-o"></i>
+              16 comments
+            </a>
+          </div>
+          <div class="likes">
+            <a href="#!">
+              <i class="fa fa-heart-o"></i>
+              322 likes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--CARD 2-->
+
+<div class="card">
+<div class="card-image" style="background-image: url(images/the-rustic-hotel.jpg)"></div>
+  <div class="card-content">
+  
+    <h1>The Rustic Hotel</h1>
+    <div class="subtitle">An atmospheric getaway</div>
+    <p>
+    A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
+    to be close to the action and fully soak up the city's atmosphere.<br>
+    Pool: No<br>
+    WiFi: Yes<br>
+    Ocean view: Yes<br>
+    Pets allowed: Yes<br>
+    </p>
+
+    <div class="card-details">
+      <div class="card-details-inner">
+        <div class="read-more">
+          <a class="button-2" href="https://en.wikivoyage.org/wiki/Chicago">View Gallery</a>
+        </div>
+        <div class="options">
+          <div class="comments">
+            <a href="#!">
+              <i class="fa fa-comments-o"></i>
+              16 comments
+            </a>
+          </div>
+          <div class="likes">
+            <a href="#!">
+              <i class="fa fa-heart-o"></i>
+              322 likes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ </div>
+</div>
   
 </body>
 </html>
