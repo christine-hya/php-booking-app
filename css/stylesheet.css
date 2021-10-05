@@ -192,27 +192,6 @@ label {
     margin: 0 auto;
 }
 
-/* HOLIDAY GALLERY GRID */
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 1rem;
-    padding-top: 50px;
-}
-
-.responsive-image {
-    max-width: 100%;
-}
-
-.cell img {
-    display: block;
-}
-
-.cell {
-    margin: 1rem;
-}
-
 /* BUTTON */
 
 .button {
@@ -232,10 +211,9 @@ label {
     border-bottom-left-radius: 5px; 
   }
 
-.button-2:hover,
-.button-2:focus {
-  background: darken(#76615C, 10%);
-  border: 1px solid darken(#76615C, 10%);
+.button:hover,
+.button:focus {
+  filter: brightness(80%);
 }
 
 /* HOTEL INFO CARDS */
@@ -315,10 +293,6 @@ a {
   
 .options a:hover {
     color: #222222;
-}
-  
-.fa {
-    margin-right: 0.25rem;
 }  
 
 .card-image {
@@ -328,7 +302,9 @@ a {
     background-repeat: no-repeat;
 }
 
-
+i {
+    color: #666666;
+}
 
 /* BOOKING PAGE */
 
@@ -338,7 +314,6 @@ a {
     margin: 0 auto;
     margin-top: 60px;
     background-color: white;
-    /* width: 100%; */
     color: #666666;
 }
 
@@ -354,6 +329,28 @@ a {
 .table-cell {
     padding: 50px;
     text-align: center;
+}
+
+
+/* HOLIDAY GALLERY GRID (BOOKING PAGE) */
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+    padding-top: 50px;
+}
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.cell img {
+    display: block;
+}
+
+.cell {
+    margin: 1rem;
 }
 
 /* COMPARE PAGE */

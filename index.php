@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
 
@@ -47,7 +48,6 @@
     <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
     <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
   </select>
-  <!-- <br> -->
   </div>
 
   <div class="item-b">
@@ -58,13 +58,11 @@
   <div class="item-c">
   <label for="surname">Surname</label>
   <input type="text" name="surname" placeholder="Your surname">
-  <!-- <br> -->
   </div>
 
   <div class="item-d">
   <label for="emailAddress">Email Address</label>
   <input type="text" name="emailAddress" placeholder="Your email address" class="email">
-  <!-- <br> -->
  </div>
 
   <input type="hidden" name="numberOfDays">
@@ -72,13 +70,11 @@
   <div class="item-e">
   <label for="checkInDate">Arrival</label>
   <input class="font-lighter date-picker" type="date" name="checkInDate">
-  <!-- <br> -->
   </div>
 
   <div class="item-f">
   <label for="checkOutDate">Departure</label>
   <input class="font-lighter date-picker" type="date" name="checkOutDate">
-  <!-- <br><br> -->
   </div>
 
   <div class="item-g">
@@ -104,13 +100,13 @@
   
     <h1>The Commodore Hotel</h1>
     <div class="subtitle">A luxury retreat</div>
-    <p>
+    <p class="hotel-info">
     Upmarket hotel with a view of the ocean and private beach access. The Commodore Hotel is for those seeking a luxury
-    experience and a truly relaxing time away.<br>
-    Pool: Yes<br>
-    WiFi: Yes<br>
-    Ocean view: Yes<br>
-    Pets allowed: No<br>
+    experience and a truly relaxing time away.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: Yes<br>
+    <i class="fas fa-wifi"></i>  WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i>  Ocean view: Yes<br>
+    <i class="fas fa-paw"></i>  Pets allowed: No<br>
     </p>
 
 
@@ -145,11 +141,11 @@
     <div class="subtitle">An atmospheric getaway</div>
     <p>
     A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
-    to be close to the action and fully soak up the city's atmosphere.<br>
-    Pool: No<br>
-    WiFi: Yes<br>
-    Ocean view: Yes<br>
-    Pets allowed: Yes<br>
+    to be close to the action and fully soak up the city's atmosphere.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: No<br>
+    <i class="fas fa-wifi"></i> WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+    <i class="fas fa-paw"></i> Pets allowed: Yes<br>
     </p>
 
     <div class="card-details">
@@ -160,13 +156,11 @@
         <div class="options">
           <div>
             <a href="#!">
-              <!-- <i class="fa fa-comments-o"></i> -->
               &#9733 &#9733 &#9733
             </a>
           </div>
           <div>
             <a href="#!">
-              <!-- <i class="fa fa-heart-o"></i> -->
               453 reviews
             </a>
           </div>

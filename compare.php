@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Crimson+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
   
@@ -57,11 +58,11 @@ $hotelName = $userInfo['hotel'];
     <div class="subtitle">A luxury retreat</div>
     <p>
     Upmarket hotel with a view of the ocean and private beach access. The Commodore Hotel is for those seeking a luxury
-    experience and a truly relaxing time away.<br>
-    Pool: Yes<br>
-    WiFi: Yes<br>
-    Ocean view: Yes<br>
-    Pets allowed: No<br>
+    experience and a truly relaxing time away.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: Yes<br>
+    <i class="fas fa-wifi"></i>  WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i>  Ocean view: Yes<br>
+    <i class="fas fa-paw"></i>  Pets allowed: No<br>
     </p>
 
 
@@ -97,11 +98,11 @@ $hotelName = $userInfo['hotel'];
     <div class="subtitle">An atmospheric getaway</div>
     <p>
     A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
-    to be close to the action and fully soak up the city's atmosphere.<br>
-    Pool: No<br>
-    WiFi: Yes<br>
-    Ocean view: Yes<br>
-    Pets allowed: Yes<br>
+    to be close to the action and fully soak up the city's atmosphere.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: No<br>
+    <i class="fas fa-wifi"></i> WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+    <i class="fas fa-paw"></i> Pets allowed: Yes<br>
     </p>
 
     <div class="card-details">
