@@ -23,7 +23,16 @@
 </head>
 <body>
 
-<div id="background"></div>
+<!--TITLE IMAGE-->
+<header>
+<div id="background">
+<div class="title-container">  
+<h1 class="title">Paradise Hotels</h1>
+<p class="tagline">Book your dream holiday.</p>
+</div>
+</div>
+
+</header>
 
 <!--BOOKING FORM GRID-->
 
@@ -82,7 +91,8 @@
 </div>
 
 <br><br><br>
-<!--HOTELS-->
+
+<!--HOTEL INFO-->
 
 <div class="card-container">
     <div class="flex-container">
@@ -107,19 +117,17 @@
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-          <a class="button-2" href="https://en.wikivoyage.org/wiki/Chicago">View Gallery</a>
+          <button class="button modal-btn-1">View Gallery</button>
         </div>
         <div class="options">
-          <div class="comments">
+          <div>
             <a href="#!">
-              <i class="fa fa-comments-o"></i>
-              16 comments
+              &#9733 &#9733 &#9733 &#9733
             </a>
           </div>
-          <div class="likes">
+          <div>
             <a href="#!">
-              <i class="fa fa-heart-o"></i>
-              322 likes
+              322 reviews
             </a>
           </div>
         </div>
@@ -129,7 +137,6 @@
 </div>
 
 <!--CARD 2-->
-
 <div class="card">
 <div class="card-image" style="background-image: url(images/the-rustic-hotel.jpg)"></div>
   <div class="card-content">
@@ -148,19 +155,19 @@
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-          <a class="button-2" href="https://en.wikivoyage.org/wiki/Chicago">View Gallery</a>
+          <button class="button modal-btn-2">View Gallery</button>
         </div>
         <div class="options">
-          <div class="comments">
+          <div>
             <a href="#!">
-              <i class="fa fa-comments-o"></i>
-              16 comments
+              <!-- <i class="fa fa-comments-o"></i> -->
+              &#9733 &#9733 &#9733
             </a>
           </div>
-          <div class="likes">
+          <div>
             <a href="#!">
-              <i class="fa fa-heart-o"></i>
-              322 likes
+              <!-- <i class="fa fa-heart-o"></i> -->
+              453 reviews
             </a>
           </div>
         </div>
@@ -171,6 +178,71 @@
 
  </div>
 </div>
-  
+
+<!--MODAL 1-->
+<div class="modal-overlay-1">
+  <div class="modal-container">
+  <a class="close-btn-1">X</a>
+  </div> 
+
+  <!--HOTEL GALLERY-->
+  <div class="container">
+  <div class="grid">
+    <div class="cell">
+      <img src="images/the-commodore-hotel-1.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-commodore-hotel-2.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-commodore-hotel-3.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-commodore-hotel-4.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-commodore-hotel-5.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-commodore-hotel-6.jpg" class="responsive-image" />
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!--MODAL 2-->
+<div class="modal-overlay-2">
+  <div class="modal-container">
+  <a class="close-btn-2">X</a>
+  </div> 
+
+  <!--HOTEL GALLERY-->
+  <div class="container">
+  <div class="grid">
+    <div class="cell">
+      <img src="images/the-rustic-hotel-1.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-rustic-hotel-2.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-rustic-hotel-3.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-rustic-hotel-4.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-rustic-hotel-5.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-rustic-hotel-6.jpg" class="responsive-image" />
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script src="scripts/bookingapp.js"></script>  
 </body>
 </html>

@@ -31,23 +31,15 @@ $hotelName = $userInfo['hotel'];
     switch ($hotelName) {
         case 'The Rustic Hotel':
         $result = $numberOfDays*500;
-        echo "<p class='compare-message'>You are booking The Rustic Hotel for " . $numberOfDays . " nights at R". $total . ". The Commodore Hotel is R" . $result . " for the same amount of nights. 
-        <br>Are you sure you want to go ahead? Compare the features below and confirm.</p>";
+        echo "<p class='compare-message'>You are booking <strong>The Rustic Hotel</strong> for " . $numberOfDays . " nights at <strong>R". $total . "</strong>. The Commodore Hotel is R" . $result . " for the same duration. 
+        <br>Are you sure you want to go ahead? Compare the features below and confirm by clicking 'Book'.</p>";
             break;
         case 'The Commodore Hotel':
         $result = $numberOfDays*350;
-        echo "<p class='compare-message'>You are booking The Commodore Hotel for ". $numberOfDays . " nights at R" .$total. ". The Rustic Hotel is R" . $result . " for the same amount of nights.
-        <br>Are you sure you want to go ahead? Compare the features below and confirm.</p>";
+        echo "<p class='compare-message'>You are booking <strong>The Commodore Hotel</strong> for ". $numberOfDays . " nights at <strong>R" .$total. "</strong>. The Rustic Hotel is R" . $result . " for the same duration.
+        <br>Are you sure you want to go ahead? Compare the features below and confirm by clicking 'Book'.</p>";
             break;
     }
-
-    // echo "<br><br>";
-    // echo "Price of other hotel" . "<br><br>" . $result;
- 
-
-// print_r($hotels);
-// echo "<br><br>";
-// print_r($userInfo);
 
 ?>
 
@@ -76,19 +68,17 @@ $hotelName = $userInfo['hotel'];
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-        <form action='email.php' method='post'><button class='button-2'>Book</button></form>
+        <form action='email.php' method='post'><button class='button'>Book</button></form>
         </div>
         <div class="options">
-          <div class="comments">
+          <div>
             <a href="#!">
-              <i class="fa fa-comments-o"></i>
-              16 comments
+              &#9733 &#9733 &#9733 &#9733
             </a>
           </div>
-          <div class="likes">
+          <div>
             <a href="#!">
-              <i class="fa fa-heart-o"></i>
-              322 likes
+              322 reviews
             </a>
           </div>
         </div>
@@ -117,19 +107,17 @@ $hotelName = $userInfo['hotel'];
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-        <form action='email.php' method='post'><button class='button-2'>Book</button></form>
+        <form action='email.php' method='post'><button class='button'>Book</button></form>
         </div>
         <div class="options">
-          <div class="comments">
+          <div>
             <a href="#!">
-              <i class="fa fa-comments-o"></i>
-              16 comments
+              &#9733 &#9733 &#9733
             </a>
           </div>
-          <div class="likes">
+          <div>
             <a href="#!">
-              <i class="fa fa-heart-o"></i>
-              322 likes
+            453 reviews
             </a>
           </div>
         </div>

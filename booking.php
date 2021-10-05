@@ -84,12 +84,14 @@ class Booking {
     }
 
     public function displayBookingDetails() {
-        echo "<div class='booking-message'>Hi ". $this->getName();
+        echo "<div class='booking-message'>";
+        echo "<table class='booking-msg-table'><tr>";
+        echo "<td class='table-cell'>Hi ". $this->getName();
         echo " " . $this->getSurname();
         echo "<br>";
-        echo "You are booking: ". $this->hotelName;
-        echo "<br>";
-        echo "Number of days: " . $this->calculateStay();
+        echo "You have selected:<br><strong> ". $this->hotelName;
+        echo "</strong><br>";
+        echo "<br>Number of days: " . $this->calculateStay();
         echo "<br>";
         echo "Daily rate: R" . $this->price;
         echo "<br>";
@@ -97,9 +99,20 @@ class Booking {
         echo "<br>";
         echo "<form action='compare.php' method'post'>";
         echo "<input type='hidden' name='hoteltoCompare'>";
-        echo "<br><button class='button'>Compare</button>";
-        echo "</form></div>";       
-    }
+        echo "<br><button class='button'>Compare Price</button>";
+        echo "</form></td>";
+
+        if ($this->hotelName == 'The Commodore Hotel') {
+        echo "<td class='table-cell'><img class='booking-msg-img' src='images/the-commodore-hotel.jpg' alt='The Commodore Hotel'></td>"; 
+        }
+        if ($this->hotelName == 'The Rustic Hotel') {
+        echo "<td class='table-cell'><img class='booking-msg-img' src='images/the-rustic-hotel.jpg' alt='The Commodore Hotel'></td>"; 
+        }
+        echo "</tr></table>";
+        echo "</div>";
+
+    }      
+    
 }
 
 if ($_POST['name'] === '' || $_POST['surname'] === '' || $_POST['emailAddress'] === ''
