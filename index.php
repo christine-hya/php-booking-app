@@ -30,63 +30,21 @@
 <div class="title-container">  
 <h1 class="title">Paradise Hotels</h1>
 <p class="tagline">Book your dream holiday.</p>
+<a href="#call-to-action"><i class=" arrow fas fa-level-down-alt"></i></a>
 </div>
 </div>
-
 </header>
 
-<!--BOOKING FORM GRID-->
-
-<div class="booking-form-container">
-
-<form class="booking-form" action="booking.php" method="post">
-
-<div class="bookingform-grid-container">
-<div class="item-a">
- <label for="hotel">Choose a hotel:</label>
-  <select name="hotel">
-    <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
-    <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
-  </select>
-  </div>
-
-  <div class="item-b">
-  <label for="name">First Name</label>
-  <input type="text" name="name" placeholder="Your name">
-  </div>
-
-  <div class="item-c">
-  <label for="surname">Surname</label>
-  <input type="text" name="surname" placeholder="Your surname">
-  </div>
-
-  <div class="item-d">
-  <label for="emailAddress">Email Address</label>
-  <input type="text" name="emailAddress" placeholder="Your email address" class="email">
- </div>
-
-  <input type="hidden" name="numberOfDays">
-
-  <div class="item-e">
-  <label for="checkInDate">Arrival</label>
-  <input class="font-lighter date-picker" type="date" name="checkInDate">
-  </div>
-
-  <div class="item-f">
-  <label for="checkOutDate">Departure</label>
-  <input class="font-lighter date-picker" type="date" name="checkOutDate">
-  </div>
-
-  <div class="item-g">
-  <input class="button" type="submit">
-  </div>
-
-  </div>
-</form> 
+<!--CALL-TO-ACTION MESSAGE-->
+<div id="call-to-action" class="call-to-action">
+  <h2>Need a reboot?</h2>
+<p>Take a look at our one-of-a-kind hotels for a rejuvinating holiday experience. Scroll
+  down and fill in our booking form.<br><br>
+  <button class="button center">Book<a href="#booking-form"> <i class=" arrow fas fa-level-down-alt"></i></a></button>
+ 
+</p>
 
 </div>
-
-<br><br><br>
 
 <!--HOTEL INFO-->
 
@@ -171,6 +129,59 @@
 </div>
 
  </div>
+</div>
+
+<br><br><br>
+
+<!--BOOKING FORM GRID-->
+
+<div id="booking-form" class="booking-form-container">
+
+<form class="booking-form" action="booking.php" method="post">
+
+<div class="bookingform-grid-container">
+<div class="item-a">
+ <label for="hotel">Choose a hotel:</label>
+  <select name="hotel">
+    <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
+    <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
+  </select>
+  </div>
+
+  <div class="item-b">
+  <label for="name">First Name</label>
+  <input type="text" name="name" placeholder="Your name">
+  </div>
+
+  <div class="item-c">
+  <label for="surname">Surname</label>
+  <input type="text" name="surname" placeholder="Your surname">
+  </div>
+
+  <div class="item-d">
+  <label for="emailAddress">Email Address</label>
+  <input type="text" name="emailAddress" placeholder="Your email address" class="email">
+ </div>
+
+  <input type="hidden" name="numberOfDays">
+
+  <div class="item-e">
+  <label for="checkInDate">Arrival</label>
+  <input class="font-lighter date-picker" type="date" name="checkInDate">
+  </div>
+
+  <div class="item-f">
+  <label for="checkOutDate">Departure</label>
+  <input class="font-lighter date-picker" type="date" name="checkOutDate">
+  </div>
+
+  <div class="item-g">
+  <input class="button" type="submit">
+  </div>
+
+  </div>
+</form> 
+
 </div>
 
 <!--MODAL 1-->

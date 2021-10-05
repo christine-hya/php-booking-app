@@ -56,14 +56,34 @@ body {
     margin: 0;
 }
 
+/* CALL-TO-ACTION */
+.call-to-action {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    color: #444444;
+    padding: 5%;
+    font-weight: bolder;
+
+}
+
+.arrow {
+    color: white;
+}
+
+.center {
+    margin: 0 auto;
+}
+
 /* BOOKING FORM */
 
 .booking-form-container {    
-    display: block;
+    /* display: block; */
     /* padding: 0.5rem; */
     background: transparent;
-    vertical-align: middle;
-    width: 100%;
+    /* vertical-align: middle; */
+    width: 100%; 
     max-width: 100%;
     border-radius: 4px;
     font-size: 0.95rem;
@@ -72,9 +92,10 @@ body {
 }
 
 .booking-form {
-    margin: auto;
-  
+    margin: 0 auto; 
     text-align: center;
+    width: 90%;
+    margin-top: 100px;
     /* border: 1px solid #cdcdcd; */
 }
 
@@ -87,6 +108,7 @@ input {
     border: none;
     padding: 0.5rem;
     color: #666666;
+    width: 100%;
 }
 
 select {
@@ -95,7 +117,7 @@ select {
     background: url("icons/caret-down-solid.svg")
       95% no-repeat; 
     line-height: 1; 
-    width: 45%;
+    width: 80%;
     border-top-right-radius: 5px; 
     border-top-left-radius: 5px; 
     border-bottom-right-radius: 5px; 
@@ -141,12 +163,13 @@ label {
 
 .bookingform-grid-container {
     display: grid;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     column-gap: 10px;
     row-gap: 15px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: white;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -323,6 +346,7 @@ i {
 }
 
 .booking-msg-table {
+    display: block;
     margin: 0 auto;
 }
 
@@ -359,8 +383,6 @@ i {
     text-align: center;
     padding: 50px;
     margin: 50px;
-    margin-left: 198px;
-    margin-right: 198px;
     color: #666666;
     background-color: white;
 }
@@ -451,6 +473,12 @@ i {
     .cell {
       width: calc(50% - 2rem);
     }
+    .booking-form {
+        width: 69%;
+    }
+    select{
+        width: 45%;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -458,10 +486,20 @@ i {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } 
+    
+    /* .booking-msg-table {
+        margin: 0 auto;
+    } */
 }
+
+
 
 @media screen and (min-width: 1000px) {
     .cell {
         width: calc(33.3333% - 2rem);
     }
+    .compare-message {
+        margin-left: 198px;
+        margin-right: 198px;
+       }
 }
