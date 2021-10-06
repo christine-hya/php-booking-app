@@ -180,7 +180,8 @@
 </div> 
 
   <!--HOTEL GALLERY-->
-<div class="container">
+<div class="gallery-container">
+  
   <div class="grid">
     <div class="cell">
       <img src="images/the-commodore-hotel-1.jpg" class="responsive-image" />
@@ -212,7 +213,7 @@
 </div> 
 
   <!--HOTEL GALLERY-->
-<div class="container">
+<div class="gallery-container">
 
   <div class="grid">
     <div class="cell">

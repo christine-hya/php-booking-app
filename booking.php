@@ -83,8 +83,8 @@ class Booking {
 
     public function displayBookingDetails() {
         echo "<div class='booking-message'>";
-        echo "<table class='booking-msg-table'><tr>";
-        echo "<td class='table-cell'>Hi ". $this->getName();
+        echo "<div class='grid'><div class='cell-booking-msg'>";
+        echo "Hi ". $this->getName();
         echo " " . $this->getSurname();
         echo "<br>";
         echo "You have selected:<br><strong> ". $this->hotelName;
@@ -97,16 +97,16 @@ class Booking {
         echo "<br>";
         echo "<form action='compare.php' method'post'>";
         echo "<input type='hidden' name='hoteltoCompare'>";
-        echo "<br><button class='button'>Compare Price</button>";
-        echo "</form></td>";
+        echo "<br><button class='button price-button'>Compare Price</button>";
+        echo "</form></div>";
 
         if ($this->hotelName == 'The Commodore Hotel') {
-        echo "<td class='table-cell'><img class='booking-msg-img' src='images/the-commodore-hotel.jpg' alt='The Commodore Hotel'></td>"; 
+        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-commodore-hotel.jpg' alt='The Commodore Hotel'></div>"; 
         }
         if ($this->hotelName == 'The Rustic Hotel') {
-        echo "<td class='table-cell'><img class='booking-msg-img' src='images/the-rustic-hotel.jpg' alt='The Commodore Hotel'></td>"; 
+        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-rustic-hotel.jpg' alt='The Commodore Hotel'></div>"; 
         }
-        echo "</tr></table>";
+        echo "</div>";
         echo "</div>";
     }         
 }
@@ -131,7 +131,7 @@ file_put_contents('userinfo.json', json_encode($_SESSION, JSON_PRETTY_PRINT));
 ?>
 
 <body>
-    <div class="container">
+    <div class="gallery-container">
       <div class="grid">
         <div class="cell">
           <img src="images/holiday-gallery-2.jpg" class="responsive-image" />

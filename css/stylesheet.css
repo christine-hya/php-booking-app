@@ -343,7 +343,10 @@ label {
 
 /* BOOKING PAGE */
 .booking-message {
-    padding: 50px;
+    padding: 10%;
+    padding-top: 10%;
+    align-items: center;
+    text-align: center;
     width: 100%;
     margin: 0 auto;
     margin-top: 60px;
@@ -352,25 +355,18 @@ label {
 }
 
 .booking-msg-img {
-    display: none;
-    padding: 0;
-}
-
-.booking-msg-table {
-    display: flex;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 10%;
+    vertical-align: middle;
 }
 
-.table-cell {
-    text-align: center;
-    padding: 0;
-    padding-left: 10%;
-    padding-right: 0%;
-    margin-right: 0%;
+.price-button {
+    margin: 0 auto; 
 }
 
-/* HOLIDAY GALLERY GRID (BOOKING PAGE) */
-.container {
+/* HOLIDAY GALLERY GRID (BOOKING PAGE & MODAL) */
+.gallery-container {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 1rem;
@@ -484,12 +480,23 @@ label {
       width: calc(50% - 2rem);
     }
 
+    .cell-booking-msg {
+       width: 50%;
+       align-items: center;
+       vertical-align: middle;
+    } 
+
     .booking-form-container {
         padding: 5%; 
     }
 
     .booking-form {
         width: 69%;
+    }
+
+    .booking-form-grid-container {
+        padding-left: 20%;
+        padding-right: 20%; 
     }
 
     select {
@@ -499,11 +506,6 @@ label {
     .title-container {
         left: 62%;
         top: 330px;
-    }
-
-    .booking-form-grid-container {
-        padding-left: 20%;
-        padding-right: 20%; 
     }
 
     .title {
@@ -523,18 +525,8 @@ label {
 
     .booking-message {
         width: 75%;
-    }
-
-    .booking-msg-img {
-        display: block;
-        width: 400px;
-        float: right;
-    }
-
-    .table-cell {
-        padding: 50px;
-    } 
-    
+        padding-bottom: 10%;
+    }   
 }
 
 @media screen and (min-width: 800px) {
@@ -564,54 +556,3 @@ label {
         width: 100%;
     }
 }
-
-@media screen and (max-width: 300px) {
-    .booking-form {
-        max-width: 100vw;
-        width: 100%;
-    } 
-
-    .booking-form-container {
-        width: 100vw;
-        padding-right: 0%;
-    }    
-
-    .booking-form-grid-container {
-        width: 100vw;
-    }
-
-    .button {
-        width: 80%;
-        font-size: small;
-    }
-
-    .submit-button {
-        width: 100%;
-    }
-
-    #background {
-        width: 100vw;
-        padding-right: 0%;
-    }
-
-    .card-container {
-        width: 100vw;
-        padding: 0%;
-        padding-right: 0%;
-    }
-
-    .card {
-        width: 100vw;
-    }
-    
-    .call-to-action {
-        width: 100%;
-        padding: 0%;
-        padding-right: 0%;
-    }
-
-    .compare-message {
-        width: 100%;
-        margin: 2%;
-    }
-} 
