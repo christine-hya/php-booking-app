@@ -8,6 +8,7 @@ session_start();?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
+    <link rel="icon" href="images/paradise-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,6 @@ class Booking {
     //CONSTRUCTOR
     public function __construct($hotelName, $name, $surname, $checkInDate, $checkOutDate) {
         $this->hotelName = $hotelName;     
-        // $this->numberOfDays = $numberOfDays;
         $this->price = $price; 
         $this->name = $name;
         $this->surname = $surname;
@@ -69,9 +69,7 @@ class Booking {
     
         $earlier = new DateTime($this->checkInDate);
         $later = new DateTime($this->checkOutDate);
-
         $dateDifference = $later->diff($earlier)->format("%a"); 
-
         return $dateDifference;
     }
 
@@ -110,9 +108,7 @@ class Booking {
         }
         echo "</tr></table>";
         echo "</div>";
-
-    }      
-    
+    }         
 }
 
 if ($_POST['name'] === '' || $_POST['surname'] === '' || $_POST['emailAddress'] === ''
@@ -135,27 +131,27 @@ file_put_contents('userinfo.json', json_encode($_SESSION, JSON_PRETTY_PRINT));
 ?>
 
 <body>
-<div class="container">
-  <div class="grid">
-    <div class="cell">
-      <img src="images/holiday-gallery-2.jpg" class="responsive-image" />
+    <div class="container">
+      <div class="grid">
+        <div class="cell">
+          <img src="images/holiday-gallery-2.jpg" class="responsive-image" />
+        </div>
+        <div class="cell">
+          <img src="images/holiday-gallery-3.jpg" class="responsive-image" />
+        </div>
+        <div class="cell">
+          <img src="images/holiday-gallery-6.jpg" class="responsive-image" />
+        </div>
+        <div class="cell">
+          <img src="images/holiday-gallery-5.jpg" class="responsive-image" />
+        </div>
+        <div class="cell">
+          <img src="images/holiday-gallery-4.jpg" class="responsive-image" />
+        </div>
+        <div class="cell">
+          <img src="images/holiday-gallery-9.jpg" class="responsive-image" />
+        </div>
+      </div>
     </div>
-    <div class="cell">
-      <img src="images/holiday-gallery-3.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/holiday-gallery-6.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/holiday-gallery-5.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/holiday-gallery-4.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/holiday-gallery-9.jpg" class="responsive-image" />
-    </div>
-  </div>
-</div>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compare</title>
+  <link rel="icon" href="images/paradise-favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,6 @@
 </head>
 <body>
   
-</body>
-</html>
-
 <?php
 
 $jsonHotels = file_get_contents('hotels.json');
@@ -27,7 +25,6 @@ $userInfo = json_decode($jsonUserinfo, true);
 $numberOfDays = $userInfo['numberOfDays'];
 $total = $userInfo['total'];
 $hotelName = $userInfo['hotel'];
-
 
     switch ($hotelName) {
         case 'The Rustic Hotel':
@@ -45,13 +42,13 @@ $hotelName = $userInfo['hotel'];
 ?>
 
 <!--HOTEL INFO-->
-
 <div class="card-container">
     <div class="flex-container">
 
 <!--CARD 1-->
 <div class="card">
 <div class="card-image" style="background-image: url(images/the-commodore-hotel.jpg)"></div>
+
   <div class="card-content">
   
     <h1>The Commodore Hotel</h1>
@@ -65,7 +62,6 @@ $hotelName = $userInfo['hotel'];
     <i class="fas fa-paw"></i>  Pets allowed: No<br>
     </p>
 
-
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
@@ -73,18 +69,15 @@ $hotelName = $userInfo['hotel'];
         </div>
         <div class="options">
           <div>
-            <a href="#!">
               &#9733 &#9733 &#9733 &#9733
-            </a>
           </div>
           <div>
-            <a href="#!">
               322 reviews
-            </a>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 </div>
 
@@ -112,14 +105,10 @@ $hotelName = $userInfo['hotel'];
         </div>
         <div class="options">
           <div>
-            <a href="#!">
               &#9733 &#9733 &#9733
-            </a>
           </div>
           <div>
-            <a href="#!">
             453 reviews
-            </a>
           </div>
         </div>
       </div>
@@ -130,9 +119,7 @@ $hotelName = $userInfo['hotel'];
  </div>
 </div>
 
-<br><br><br><br>
-
-
-
+</body>
+</html>
 
  
