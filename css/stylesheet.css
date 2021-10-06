@@ -136,6 +136,16 @@ input {
     width: 60%; 
 }
 
+input:focus {
+   color: #666666;
+   border-style: inset;
+   outline-color: #666666;
+}
+
+input:focus-within {
+    color: #666666;
+}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -165,9 +175,10 @@ select {
     background-size: auto 20px;
     line-height: 1; 
     background-color: whitesmoke;
-    padding-left: 0%;
-    padding-right: 0%;
-    width: 80%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 90%;
+    font-size: smaller;
 }
 
 input[type="date"]::-webkit-inner-spin-button,
@@ -466,7 +477,7 @@ label {
     text-align: center;
     margin: 0 auto;
     margin-top: 100px;
-    padding: 100px;
+    padding: 10%;
 }
 
 @media screen and (min-width: 600px) {
@@ -504,7 +515,7 @@ label {
     }
 
     .title-container {
-        left: 62%;
+        left: 60%;
         top: 330px;
     }
 
@@ -512,7 +523,7 @@ label {
         margin: 0; 
         font-weight: bolder;
         font-size: xx-large;
-      }
+    }
 
     .tagline {
           margin: 0;
@@ -555,4 +566,36 @@ label {
     .call-to-action {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 350px) {
+    .button {
+        width: min-content;
+        font-size: small;
+    }
+
+    .reviews {
+        font-size: small;
+    }
+
+    .date-picker {
+        width: 75%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    .hotel-options {
+        width: 65%;
+        font-size: smaller;
+    }
+
+    #background {
+        background-image: url("images/booking-app-cover-phone.jpg");
+    }
+
+    .title-container {
+        left: 30%;
+        top: 33%;
+        font-size: smaller;
+    } 
 }

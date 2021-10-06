@@ -71,7 +71,7 @@
         <div class="read-more">
           <button class="button modal-btn-1">View Gallery</button>
         </div>
-        <div class="options">
+        <div class="reviews">
           <div>
               &#9733 &#9733 &#9733 &#9733
           </div>
@@ -105,7 +105,7 @@
         <div class="read-more">
           <button class="button modal-btn-2">View Gallery</button>
         </div>
-        <div class="options">
+        <div class="reviews">
           <div>
               &#9733 &#9733 &#9733
           </div>
@@ -128,47 +128,48 @@
 
 <form class="booking-form" action="booking.php" method="post">
 
-<div class="bookingform-grid-container">
-<div class="item-a">
-  <label for="hotel">Choose a hotel:</label>
-    <select name="hotel">
-      <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
-      <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
-    </select>
-</div>
+  <div class="bookingform-grid-container">
+      <div class="item-a">
+        <label for="hotel">Choose a hotel:</label>
+        <select class="hotel-options" name="hotel">
+            <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
+            <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
+        </select>
+    </div>
 
-  <div class="item-b">
-    <label for="name">First Name</label>
-    <input type="text" name="name" placeholder="Your name">
+      <div class="item-b">
+        <label for="name">First Name</label>
+        <input type="text" name="name" placeholder="Your name">
+      </div>
+
+      <div class="item-c">
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" placeholder="Your surname">
+      </div>
+
+      <div class="item-d">
+        <label for="emailAddress">Email Address</label>
+        <input type="text" name="emailAddress" placeholder="Your email address" class="email">
+      </div>
+
+      <input type="hidden" name="numberOfDays">
+
+      <div class="item-e">
+        <label for="checkInDate">Arrival</label>
+        <input class="font-lighter date-picker" type="date" name="checkInDate">
+      </div>
+
+      <div class="item-f">
+        <label for="checkOutDate">Departure</label>
+        <input class="font-lighter date-picker" type="date" name="checkOutDate">
+      </div>
+
+      <div class="item-g">
+        <input class="button submit-button" type="submit">
+      </div>
+
   </div>
 
-  <div class="item-c">
-    <label for="surname">Surname</label>
-    <input type="text" name="surname" placeholder="Your surname">
-  </div>
-
-  <div class="item-d">
-    <label for="emailAddress">Email Address</label>
-    <input type="text" name="emailAddress" placeholder="Your email address" class="email">
- </div>
-
-  <input type="hidden" name="numberOfDays">
-
-  <div class="item-e">
-    <label for="checkInDate">Arrival</label>
-    <input class="font-lighter date-picker" type="date" name="checkInDate">
-  </div>
-
-  <div class="item-f">
-    <label for="checkOutDate">Departure</label>
-    <input class="font-lighter date-picker" type="date" name="checkOutDate">
-  </div>
-
-  <div class="item-g">
-    <input class="button submit-button" type="submit">
-  </div>
-
-  </div>
 </form> 
 
 </div>
@@ -177,31 +178,34 @@
 <div class="modal-overlay-1">
   <div class="modal-container">
   <a class="close-btn-1">X</a>
-</div> 
+  </div> 
 
   <!--HOTEL GALLERY-->
 <div class="gallery-container">
-  
-  <div class="grid">
-    <div class="cell">
-      <img src="images/the-commodore-hotel-1.jpg" class="responsive-image" />
+
+    <div class="grid">
+
+      <div class="cell">
+        <img src="images/the-commodore-hotel-1.jpg" class="responsive-image" />
+      </div>
+      <div class="cell">
+        <img src="images/the-commodore-hotel-2.jpg" class="responsive-image" />
+      </div>
+      <div class="cell">
+        <img src="images/the-commodore-hotel-3.jpg" class="responsive-image" />
+      </div>
+      <div class="cell">
+        <img src="images/the-commodore-hotel-4.jpg" class="responsive-image" />
+      </div>
+      <div class="cell">
+        <img src="images/the-commodore-hotel-5.jpg" class="responsive-image" />
+      </div>
+      <div class="cell">
+        <img src="images/the-commodore-hotel-6.jpg" class="responsive-image" />
+      </div>
+
     </div>
-    <div class="cell">
-      <img src="images/the-commodore-hotel-2.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/the-commodore-hotel-3.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/the-commodore-hotel-4.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/the-commodore-hotel-5.jpg" class="responsive-image" />
-    </div>
-    <div class="cell">
-      <img src="images/the-commodore-hotel-6.jpg" class="responsive-image" />
-    </div>
-  </div>
+
 </div>
 
 </div>
@@ -235,6 +239,7 @@
       <img src="images/the-rustic-hotel-6.jpg" class="responsive-image" />
     </div>
   </div>
+  
 </div>
 
 </div>
