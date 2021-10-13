@@ -65,7 +65,7 @@ $hotelName = $userInfo['hotel'];
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-        <form action='email.php' method='post'><button class='button'>Book</button></form>
+        <form action='email.php' method='post'><button class='button'>Book now</button></form>
         </div>
         <div class="reviews">
           <div>
@@ -101,7 +101,7 @@ $hotelName = $userInfo['hotel'];
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-        <form action='email.php' method='post'><button class='button'>Book</button></form>
+        <form action='email.php' method='post'><button class='button'>Book now</button></form>
         </div>
         <div class="reviews">
           <div>
