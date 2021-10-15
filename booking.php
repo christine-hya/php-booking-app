@@ -47,6 +47,20 @@ class Booking {
         else if ($this->hotelName === "The Rustic Hotel") {
             $this->price = 350;
         }
+        else if ($this->hotelName === "The Sunset Hotel") {
+          $this->price = 550;
+        }
+        else if ($this->hotelName === "Hotel Tropico") {
+        $this->price = 400;
+        }
+        else if ($this->hotelName === "Tranquility Hotel") {
+          $this->price = 350;
+        }
+        else if ($this->hotelName === "Mountain View Hotel") {
+          $this->price = 450;
+        }  
+        $_SESSION['price'] = $this->price;  
+
     }
 
     //GETTERS AND SETTERS
@@ -190,7 +204,7 @@ else {
    $booking = new Booking($_SESSION['hotel'], $_SESSION['name'], $_SESSION['surname'], $_SESSION['checkInDate'], $_SESSION['checkOutDate']);
    $booking->addNumberOfDaysToArray();
    $booking->addTotalToArray();
-   $booking->displayBookingDetails();         
+   $booking->displayBookingDetails();        
 }
 
 $_SESSION['numberOfDays'] = $_POST['numberOfDays'];

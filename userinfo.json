@@ -1,10 +1,11 @@
 {
-    "hotel": "Tranquility Hotel",
+    "hotel": "The Commodore Hotel",
     "name": "Christine",
     "surname": "Hogg",
     "emailAddress": "wordsbychristinehogg@gmail.com",
-    "numberOfDays": "11",
+    "numberOfDays": "3",
     "checkInDate": "2021-10-16",
-    "checkOutDate": "2021-10-27",
-    "total": 0
+    "checkOutDate": "2021-10-19",
+    "total": 1500,
+    "price": 500
 }

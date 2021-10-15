@@ -133,10 +133,10 @@
   <div class="card-content">
   
     <h1>The Sunset Hotel</h1>
-    <div class="subtitle">A luxury retreat</div>
+    <div class="subtitle">A heavenly affair</div>
     <p class="hotel-info">
-    Upmarket hotel with a view of the ocean and private beach access. The Commodore Hotel is for those seeking a luxury
-    experience and a truly relaxing time away.<br><br>
+    A cosy hotel with stunning ocean views, close to white-sand beaches and crystal clear waters.
+    The Sunset Hotel is a five-star establishment, promising maximum comfort and relaxation.<br><br>
     <i class="fas fa-swimmer"></i> Pool: Yes<br>
     <i class="fas fa-wifi"></i>  WiFi: Yes<br>
     <i class="fas fa-umbrella-beach"></i>  Ocean view: Yes<br>
@@ -150,10 +150,10 @@
         </div>
         <div class="reviews">
           <div>
-              &#9733 &#9733 &#9733 &#9733
+              &#9733 &#9733 &#9733 &#9733 &#9733
           </div>
           <div>
-              322 reviews
+              536 reviews
           </div>
         </div>
       </div>
@@ -167,14 +167,15 @@
   <div class="card-content">
   
     <h1>Hotel Tropico</h1>
-    <div class="subtitle">An atmospheric getaway</div>
+    <div class="subtitle">All-in-one bliss</div>
     <p>
-    A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
-    to be close to the action and fully soak up the city's atmosphere.<br><br>
-    <i class="fas fa-swimmer"></i> Pool: No<br>
+    This upmarket hotel offers a wide range of in-house entertainment, luxury spas and gourmet food.
+    Hotel Tropico is for holiday makers who enjoy the simplicity of having everything in one place. 
+    <br><br>
+    <i class="fas fa-swimmer"></i> Pool: Yes<br>
     <i class="fas fa-wifi"></i> WiFi: Yes<br>
     <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
-    <i class="fas fa-paw"></i> Pets allowed: Yes<br>
+    <i class="fas fa-paw"></i> Pets allowed: No<br>
     </p>
 
     <div class="card-details">
@@ -187,7 +188,7 @@
               &#9733 &#9733 &#9733
           </div>
           <div>
-              453 reviews
+              421 reviews
           </div>
         </div>
       </div>
@@ -208,14 +209,14 @@
   <div class="card-content">
   
     <h1>Tranquility Hotel</h1>
-    <div class="subtitle">A luxury retreat</div>
+    <div class="subtitle">A home away from home</div>
     <p class="hotel-info">
-    Upmarket hotel with a view of the ocean and private beach access. The Commodore Hotel is for those seeking a luxury
-    experience and a truly relaxing time away.<br><br>
+    Far away from noisy streets, this hotel offers a calming hideaway for those in need of 
+    escaping the stress that comes with the daily grind. Full privacy, full service. Bring your pets along if you wish.<br><br>
     <i class="fas fa-swimmer"></i> Pool: Yes<br>
     <i class="fas fa-wifi"></i>  WiFi: Yes<br>
     <i class="fas fa-umbrella-beach"></i>  Ocean view: Yes<br>
-    <i class="fas fa-paw"></i>  Pets allowed: No<br>
+    <i class="fas fa-paw"></i>  Pets allowed: Yes<br>
     </p>
 
     <div class="card-details">
@@ -228,7 +229,7 @@
               &#9733 &#9733 &#9733 &#9733
           </div>
           <div>
-              322 reviews
+              299 reviews
           </div>
         </div>
       </div>
@@ -242,13 +243,13 @@
   <div class="card-content">
   
     <h1>Mountain View Hotel</h1>
-    <div class="subtitle">An atmospheric getaway</div>
+    <div class="subtitle">A fun-filled experience</div>
     <p>
-    A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
-    to be close to the action and fully soak up the city's atmosphere.<br><br>
-    <i class="fas fa-swimmer"></i> Pool: No<br>
+    Amidst a spectacular mountain range, The Mountain View Hotel is for the adventourous traveller. 
+    Guests have a range of exhilarating activities to choose from, such as rockclimbing, ziplining and river rafting.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: Yes<br>
     <i class="fas fa-wifi"></i> WiFi: Yes<br>
-    <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+    <i class="fas fa-umbrella-beach"></i> Ocean view: No<br>
     <i class="fas fa-paw"></i> Pets allowed: Yes<br>
     </p>
 
