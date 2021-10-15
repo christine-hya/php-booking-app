@@ -94,18 +94,87 @@ class Booking {
         echo "Daily rate: R" . $this->price;
         echo "<br>";
         echo "Total: R" . $this->calculateTotal();
-        echo "<br>";
-        echo "<form action='compare.php' method'post'>";
-        echo "<input type='hidden' name='hoteltoCompare'>";
+        echo "<br><br>";
+        echo "<form action='compare.php' method='post'>";
+        echo "<label for='hoteltoCompare'>Choose a hotel to compare:</label>";
+        echo "<select class='hotel-options' name='hoteltoCompare'>";
+
+        if ($this->hotelName == 'The Commodore Hotel') {
+           echo "<option value='The Rustic Hotel' name='RusticHotel'>The Rustic Hotel</option>"; 
+           echo "<option value='The Sunset Hotel' name='TheSunsetHotel'>The Sunset Hotel</option>";
+           echo "<option value='Hotel Tropico' name='HotelTropico'>Hotel Tropico</option>";
+           echo "<option value='Tranquility Hotel' name='TranquilityHotel'>Tranquility Hotel</option>";
+           echo "<option value='Mountain View Hotel' name='MountainViewHotel'>Mountain View Hotel</option>";      
+        }   
+        
+        if ($this->hotelName == 'The Rustic Hotel') {
+          echo "<option value='The Commodore Hotel' name='CommodoreHotel'>The Commodore Hotel</option>";
+          echo "<option value='The Sunset Hotel' name='TheSunsetHotel'>The Sunset Hotel</option>";
+          echo "<option value='Hotel Tropico' name='HotelTropico'>Hotel Tropico</option>";
+          echo "<option value='Tranquility Hotel' name='TranquilityHotel'>Tranquility Hotel</option>";
+          echo "<option value='Mountain View Hotel' name='MountainViewHotel'>Mountain View Hotel</option>";
+        }
+
+        if ($this->hotelName == 'The Sunset Hotel') {
+          echo "<option value='The Commodore Hotel' name='CommodoreHotel'>The Commodore Hotel</option>";
+          echo "<option value='The Rustic Hotel' name='RusticHotel'>The Rustic Hotel</option>";
+          echo "<option value='Hotel Tropico' name='HotelTropico'>Hotel Tropico</option>";
+          echo "<option value='Tranquility Hotel' name='TranquilityHotel'>Tranquility Hotel</option>";
+          echo "<option value='Mountain View Hotel' name='MountainViewHotel'>Mountain View Hotel</option>";
+        }
+
+        if ($this->hotelName == 'Hotel Tropico') {
+          echo "<option value='The Commodore Hotel' name='CommodoreHotel'>The Commodore Hotel</option>";
+          echo "<option value='The Rustic Hotel' name='RusticHotel'>The Rustic Hotel</option>";
+          echo "<option value='The Sunset Hotel' name='TheSunsetHotel'>The Sunset Hotel</option>";
+          echo "<option value='Tranquility Hotel' name='TranquilityHotel'>Tranquility Hotel</option>";
+          echo "<option value='Mountain View Hotel' name='MountainViewHotel'>Mountain View Hotel</option>";
+        }
+
+        if ($this->hotelName == 'Tranquility Hotel') {
+          echo "<option value='The Commodore Hotel' name='CommodoreHotel'>The Commodore Hotel</option>";
+          echo "<option value='The Rustic Hotel' name='RusticHotel'>The Rustic Hotel</option>";         
+          echo "<option value='The Sunset Hotel' name='TheSunsetHotel'>The Sunset Hotel</option>";
+          echo "<option value='Hotel Tropico' name='HotelTropico'>Hotel Tropico</option>";
+          echo "<option value='Mountain View Hotel' name='MountainViewHotel'>Mountain View Hotel</option>";
+        }
+
+        if ($this->hotelName == 'Mountain View Hotel') {
+          echo "<option value='The Commodore Hotel' name='CommodoreHotel'>The Commodore Hotel</option>";
+          echo "<option value='The Rustic Hotel' name='RusticHotel'>The Rustic Hotel</option>";         
+          echo "<option value='The Sunset Hotel' name='TheSunsetHotel'>The Sunset Hotel</option>";
+          echo "<option value='Hotel Tropico' name='HotelTropico'>Hotel Tropico</option>";
+          echo "<option value='Tranquility Hotel' name='TranquilityHotel'>Tranquility Hotel</option>";
+        }
+
+        echo "</select><br><br>";
         echo "<br><button class='button price-button'>Compare Price</button>";
         echo "</form></div>";
 
         if ($this->hotelName == 'The Commodore Hotel') {
         echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-commodore-hotel.jpg' alt='The Commodore Hotel'></div>"; 
         }
+
         if ($this->hotelName == 'The Rustic Hotel') {
-        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-rustic-hotel.jpg' alt='The Commodore Hotel'></div>"; 
+        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-rustic-hotel.jpg' alt='The Rustic Hotel'></div>"; 
         }
+
+        if ($this->hotelName == 'The Sunset Hotel') {
+        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/the-sunset-hotel.jpg' alt='The Sunset Hotel'></div>";
+        }
+
+        if ($this->hotelName == 'Hotel Tropico') {
+        echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/tropico-hotel.jpg' alt='Hotel Tropico'></div>";  
+        }
+
+        if ($this->hotelName == 'Tranquility Hotel') {
+          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/tranquility-hotel.jpg' alt='Tranquility Hotel'></div>";  
+        }
+
+        if ($this->hotelName == 'Mountain View Hotel') {
+          echo "<div class='cell-booking-msg'><img class='booking-msg-img' src='images/mountainview-hotel.jpg' alt='Mountain View Hotel'></div>";  
+        }
+
         echo "</div>";
         echo "</div>";
     }         
@@ -130,6 +199,8 @@ file_put_contents('userinfo.json', json_encode($_SESSION, JSON_PRETTY_PRINT));
  
 ?>
 
+
+<!--GALLERY-->
 <body>
     <div class="gallery-container">
       <div class="grid">

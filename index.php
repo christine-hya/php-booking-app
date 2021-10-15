@@ -46,11 +46,11 @@
     </p>
 </div>
 
-<!--HOTEL INFO-->
+<!--HOTEL INFO SECTION 1-->
 <div class="card-container">
     <div class="flex-container">
 
-<!--CARD 1-->
+<!--CARD 1 THE COMMODORE HOTEL-->
 <div class="card">
 <div class="card-image" style="background-image: url(images/the-commodore-hotel.jpg)"></div>
   <div class="card-content">
@@ -84,7 +84,7 @@
   </div>
 </div>
 
-<!--CARD 2-->
+<!--CARD 2 THE RUSTIC HOTEL-->
 <div class="card">
 <div class="card-image" style="background-image: url(images/the-rustic-hotel.jpg)"></div>
   <div class="card-content">
@@ -118,10 +118,165 @@
   </div>
 </div>
 
+
  </div>
 </div>
 
+
+<!--HOTEL INFO SECTION 2-->
+<div class="card-container">
+  <div class="flex-container">
+
+<!--CARD 3 THE SUNSET HOTEL-->
+<div class="card">
+<div class="card-image" style="background-image: url(images/the-sunset-hotel.jpg)"></div>
+  <div class="card-content">
+  
+    <h1>The Sunset Hotel</h1>
+    <div class="subtitle">A luxury retreat</div>
+    <p class="hotel-info">
+    Upmarket hotel with a view of the ocean and private beach access. The Commodore Hotel is for those seeking a luxury
+    experience and a truly relaxing time away.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: Yes<br>
+    <i class="fas fa-wifi"></i>  WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i>  Ocean view: Yes<br>
+    <i class="fas fa-paw"></i>  Pets allowed: No<br>
+    </p>
+
+    <div class="card-details">
+      <div class="card-details-inner">
+        <div class="read-more">
+          <button class="button modal-btn-1">View Gallery</button>
+        </div>
+        <div class="reviews">
+          <div>
+              &#9733 &#9733 &#9733 &#9733
+          </div>
+          <div>
+              322 reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--CARD 4 HOTEL TROPICO-->
+<div class="card">
+<div class="card-image" style="background-image: url(images/tropico-hotel.jpg)"></div>
+  <div class="card-content">
+  
+    <h1>Hotel Tropico</h1>
+    <div class="subtitle">An atmospheric getaway</div>
+    <p>
+    A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
+    to be close to the action and fully soak up the city's atmosphere.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: No<br>
+    <i class="fas fa-wifi"></i> WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+    <i class="fas fa-paw"></i> Pets allowed: Yes<br>
+    </p>
+
+    <div class="card-details">
+      <div class="card-details-inner">
+        <div class="read-more">
+          <button class="button modal-btn-2">View Gallery</button>
+        </div>
+        <div class="reviews">
+          <div>
+              &#9733 &#9733 &#9733
+          </div>
+          <div>
+              453 reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!--HOTEL INFO SECTION 3-->
+<div class="card-container">
+  <div class="flex-container">
+
+<!--CARD 5 TRANQUILITY HOTEL-->
+<div class="card">
+<div class="card-image" style="background-image: url(images/tranquility-hotel.jpg)"></div>
+  <div class="card-content">
+  
+    <h1>Tranquility Hotel</h1>
+    <div class="subtitle">A luxury retreat</div>
+    <p class="hotel-info">
+    Upmarket hotel with a view of the ocean and private beach access. The Commodore Hotel is for those seeking a luxury
+    experience and a truly relaxing time away.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: Yes<br>
+    <i class="fas fa-wifi"></i>  WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i>  Ocean view: Yes<br>
+    <i class="fas fa-paw"></i>  Pets allowed: No<br>
+    </p>
+
+    <div class="card-details">
+      <div class="card-details-inner">
+        <div class="read-more">
+          <button class="button modal-btn-1">View Gallery</button>
+        </div>
+        <div class="reviews">
+          <div>
+              &#9733 &#9733 &#9733 &#9733
+          </div>
+          <div>
+              322 reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--CARD 6 MOUNTAIN VIEW HOTEL-->
+<div class="card">
+<div class="card-image" style="background-image: url(images/mountainview-hotel.jpg)"></div>
+  <div class="card-content">
+  
+    <h1>Mountain View Hotel</h1>
+    <div class="subtitle">An atmospheric getaway</div>
+    <p>
+    A friendly and down-to-earth hotel close to public beaches, shops and nightlife. The Rustic Hotel is for young people looking 
+    to be close to the action and fully soak up the city's atmosphere.<br><br>
+    <i class="fas fa-swimmer"></i> Pool: No<br>
+    <i class="fas fa-wifi"></i> WiFi: Yes<br>
+    <i class="fas fa-umbrella-beach"></i> Ocean view: Yes<br>
+    <i class="fas fa-paw"></i> Pets allowed: Yes<br>
+    </p>
+
+    <div class="card-details">
+      <div class="card-details-inner">
+        <div class="read-more">
+          <button class="button modal-btn-2">View Gallery</button>
+        </div>
+        <div class="reviews">
+          <div>
+              &#9733 &#9733 &#9733
+          </div>
+          <div>
+              453 reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
 <br><br><br>
+
+<br><br><br>
+
 
 <!--BOOKING FORM GRID-->
 <div id="booking-form" class="booking-form-container">
@@ -134,6 +289,10 @@
         <select class="hotel-options" name="hotel">
             <option value="The Commodore Hotel" name="CommodoreHotel">The Commodore Hotel</option>
             <option value="The Rustic Hotel" name="RusticHotel">The Rustic Hotel</option>
+            <option value="The Sunset Hotel" name="TheSunsetHotel">The Sunset Hotel</option>
+            <option value="Hotel Tropico" name="HotelTropico">Hotel Tropico</option>
+            <option value="Tranquility Hotel" name="TranquilityHotel">Tranquility Hotel</option>
+            <option value="Mountain View Hotel" name="MountainViewHotel">Mountain View Hotel</option>
         </select>
     </div>
 

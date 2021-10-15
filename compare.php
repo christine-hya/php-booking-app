@@ -25,6 +25,9 @@ $userInfo = json_decode($jsonUserinfo, true);
 $numberOfDays = $userInfo['numberOfDays'];
 $total = $userInfo['total'];
 $hotelName = $userInfo['hotel'];
+$hoteltoCompare = $_POST['hoteltoCompare'];
+
+
 
     switch ($hotelName) {
         case 'The Rustic Hotel':
@@ -38,7 +41,11 @@ $hotelName = $userInfo['hotel'];
         <br>Are you sure you want to go ahead? Compare the features below and confirm by clicking 'Book'.</p>";
             break;
     }
-
+    print_r($_POST);
+    var_dump($_POST);
+    echo $_POST['hoteltoCompare'];
+    echo $hoteltoCompare;
+    echo $_POST['test'];
 ?>
 
 <!--HOTEL INFO-->
