@@ -164,13 +164,160 @@ echo "<div class='card'>
 ";
 }
 
+if ($hotelName == 'The Sunset Hotel') {
+  //CARD 3 THE SUNSET HOTEL
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/the-sunset-hotel.jpg)'></div>
+    <div class='card-content'>
+    
+      <h1>The Sunset Hotel</h1>
+      <div class='subtitle'>Pure relaxation</div>
+      <p class='hotel-info'>
+      A cosy hotel with stunning ocean views, close to white-sand beaches and crystal clear waters.
+      The Sunset Hotel is a five-star establishment, promising maximum comfort and relaxation.<br><br>
+      <i class='fas fa-swimmer'></i> Pool: Yes<br>
+      <i class='fas fa-wifi'></i>  WiFi: Yes<br>
+      <i class='fas fa-umbrella-beach'></i>  Ocean view: Yes<br>
+      <i class='fas fa-paw'></i>  Pets allowed: No<br>
+      </p>
+  
+      <div class='card-details'>
+        <div class='card-details-inner'>
+          <div class='read-more'>
+          <form action='email.php' method='post'><button class='button'>Book now</button></form>
+          </div>
+          <div class='reviews'>
+            <div>
+                &#9733 &#9733 &#9733 &#9733 &#9733
+            </div>
+            <div>
+                536 reviews
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>";
+}
+
+if ($hotelName == 'Hotel Tropico') {
+  //CARD 4 THE HOTEL TROPICO
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/tropico-hotel.jpg)'></div>
+   <div class='card-content'>
+  
+    <h1>Hotel Tropico</h1>
+    <div class='subtitle'>All-in-one bliss</div>
+    <p>
+    This upmarket hotel offers a wide range of in-house entertainment, luxury spas and gourmet food.
+    Hotel Tropico is for holiday makers who enjoy the simplicity of having everything in one place. 
+    <br><br>
+    <i class='fas fa-swimmer'></i> Pool: Yes<br>
+    <i class='fas fa-wifi'></i> WiFi: Yes<br>
+    <i class='fas fa-umbrella-beach'></i> Ocean view: Yes<br>
+    <i class='fas fa-paw'></i> Pets allowed: No<br>
+    </p>
+
+    <div class='card-details'>
+      <div class='card-details-inner'>
+        <div class='read-more'>
+        <form action='email.php' method='post'><button class='button'>Book now</button></form>
+        </div>
+        <div class='reviews'>
+          <div>
+              &#9733 &#9733 &#9733
+          </div>
+          <div>
+              421 reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>";
+}
+
+if ($hotelName == 'Tranquility Hotel') {
+  //CARD 5 TRANQUILITY HOTEL
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/tranquility-hotel.jpg)'></div>
+    <div class='card-content'>
+    
+      <h1>Tranquility Hotel</h1>
+      <div class='subtitle'>A home away from home</div>
+      <p class='hotel-info'>
+      Far away from noisy streets, this hotel offers a calming hideaway for those in need of 
+      escaping the stress that comes with the daily grind. Full privacy, full service. Bring your pets along if you wish.<br><br>
+      <i class='fas fa-swimmer'></i> Pool: Yes<br>
+      <i class='fas fa-wifi'></i>  WiFi: Yes<br>
+      <i class='fas fa-umbrella-beach'></i>  Ocean view: Yes<br>
+      <i class='fas fa-paw'></i>  Pets allowed: Yes<br>
+      </p>
+  
+      <div class='card-details'>
+        <div class='card-details-inner'>
+          <div class='read-more'>
+          <form action='email.php' method='post'><button class='button'>Book now</button></form>
+          </div>
+          <div class='reviews'>
+            <div>
+                &#9733 &#9733 &#9733 &#9733
+            </div>
+            <div>
+                299 reviews
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>";
+}
+
+if ($hotelName == 'Mountain View Hotel') {
+  //CARD 6 MOUNTAIN VIEW HOTEL
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/mountainview-hotel.jpg)'></div>
+    <div class='card-content'>
+    
+      <h1>Mountain View Hotel</h1>
+      <div class='subtitle'>A fun-packed experience</div>
+      <p>
+      Amidst a spectacular mountain range, this one's for the adventourous traveller. 
+      Guests have a range of exhilarating activities to choose from, such as rockclimbing, ziplining and river rafting.<br><br>
+      <i class='fas fa-swimmer'></i> Pool: Yes<br>
+      <i class='fas fa-wifi'></i> WiFi: Yes<br>
+      <i class='fas fa-umbrella-beach'></i> Ocean view: No<br>
+      <i class='fas fa-paw'></i> Pets allowed: Yes<br>
+      </p>
+  
+      <div class='card-details'>
+        <div class='card-details-inner'>
+          <div class='read-more'>
+          <form action='email.php' method='post'><button class='button'>Book now</button></form>
+          </div>
+          <div class='reviews'>
+            <div>
+                &#9733 &#9733 &#9733
+            </div>
+            <div>
+                453 reviews
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>";
+}
+
+
+
 // COMPARISON
 
 if ($hoteltoCompare == 'The Commodore Hotel') {
+  //CARD 1 THE COMMODORE HOTEL
   echo "<div class='card'>
-<div class='card-image' style='background-image: url(images/the-commodore-hotel.jpg)'></div>
-
-  <div class='card-content'>
+  <div class='card-image' style='background-image: url(images/the-commodore-hotel.jpg)'></div>
+    <div class='card-content'>
   
     <h1>The Commodore Hotel</h1>
     <div class='subtitle'>A luxury retreat</div>
@@ -204,9 +351,10 @@ if ($hoteltoCompare == 'The Commodore Hotel') {
 }
 
 if ($hoteltoCompare == 'The Rustic Hotel') {
+  //CARD 2 THE RUSTIC HOTEL
   echo "<div class='card'>
-<div class='card-image' style='background-image: url(images/the-rustic-hotel.jpg)'></div>
-  <div class='card-content'>
+  <div class='card-image' style='background-image: url(images/the-rustic-hotel.jpg)'></div>
+   <div class='card-content'>
   
     <h1>The Rustic Hotel</h1>
     <div class='subtitle'>An atmospheric getaway</div>
@@ -238,6 +386,151 @@ if ($hoteltoCompare == 'The Rustic Hotel') {
 </div>
   ";
 }
+
+if ($hoteltoCompare == 'The Sunset Hotel') {
+   //CARD 3 THE SUNSET HOTEL
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/the-sunset-hotel.jpg)'></div>
+    <div class='card-content'>
+    
+      <h1>The Sunset Hotel</h1>
+      <div class='subtitle'>Pure relaxation</div>
+      <p class='hotel-info'>
+      A cosy hotel with stunning ocean views, close to white-sand beaches and crystal clear waters.
+      The Sunset Hotel is a five-star establishment, promising maximum comfort and relaxation.<br><br>
+      <i class='fas fa-swimmer'></i> Pool: Yes<br>
+      <i class='fas fa-wifi'></i>  WiFi: Yes<br>
+      <i class='fas fa-umbrella-beach'></i>  Ocean view: Yes<br>
+      <i class='fas fa-paw'></i>  Pets allowed: No<br>
+      </p>
+  
+      <div class='card-details'>
+        <div class='card-details-inner'>
+          <div class='read-more'>
+          <form action='email.php' method='post'><button class='button'>Book now</button></form>
+          </div>
+          <div class='reviews'>
+            <div>
+                &#9733 &#9733 &#9733 &#9733 &#9733
+            </div>
+            <div>
+                536 reviews
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>";
+}
+
+if ($hoteltoCompare == 'Hotel Tropico') {
+  //CARD 4 HOTEL TROPICO
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/tropico-hotel.jpg)'></div>
+   <div class='card-content'>
+  
+    <h1>Hotel Tropico</h1>
+    <div class='subtitle'>All-in-one bliss</div>
+    <p>
+    This upmarket hotel offers a wide range of in-house entertainment, luxury spas and gourmet food.
+    Hotel Tropico is for holiday makers who enjoy the simplicity of having everything in one place. 
+    <br><br>
+    <i class='fas fa-swimmer'></i> Pool: Yes<br>
+    <i class='fas fa-wifi'></i> WiFi: Yes<br>
+    <i class='fas fa-umbrella-beach'></i> Ocean view: Yes<br>
+    <i class='fas fa-paw'></i> Pets allowed: No<br>
+    </p>
+
+    <div class='card-details'>
+      <div class='card-details-inner'>
+        <div class='read-more'>
+        <form action='email.php' method='post'><button class='button'>Book now</button></form>
+        </div>
+        <div class='reviews'>
+          <div>
+              &#9733 &#9733 &#9733
+          </div>
+          <div>
+              421 reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>";
+}
+
+if ($hoteltoCompare == 'Tranquility Hotel') {
+  //CARD 5 TRANQUILITY HOTEL
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/tranquility-hotel.jpg)'></div>
+    <div class='card-content'>
+  
+    <h1>Tranquility Hotel</h1>
+    <div class='subtitle'>A home away from home</div>
+    <p class='hotel-info'>
+    Far away from noisy streets, this hotel offers a calming hideaway for those in need of 
+    escaping the stress that comes with the daily grind. Full privacy, full service. Bring your pets along if you wish.<br><br>
+    <i class='fas fa-swimmer'></i> Pool: Yes<br>
+    <i class='fas fa-wifi'></i>  WiFi: Yes<br>
+    <i class='fas fa-umbrella-beach'></i>  Ocean view: Yes<br>
+    <i class='fas fa-paw'></i>  Pets allowed: Yes<br>
+    </p>
+
+    <div class='card-details'>
+      <div class='card-details-inner'>
+        <div class='read-more'>
+        <form action='email.php' method='post'><button class='button'>Book now</button></form>
+        </div>
+        <div class='reviews'>
+          <div>
+              &#9733 &#9733 &#9733 &#9733
+          </div>
+          <div>
+              299 reviews
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>";
+}
+
+if ($hoteltoCompare == 'Mountain View Hotel') {
+  //CARD 6 MOUNTAIN VIEW HOTEL
+  echo "<div class='card'>
+  <div class='card-image' style='background-image: url(images/mountainview-hotel.jpg)'></div>
+    <div class='card-content'>
+    
+      <h1>Mountain View Hotel</h1>
+      <div class='subtitle'>A fun-packed experience</div>
+      <p>
+      Amidst a spectacular mountain range, this one's for the adventourous traveller. 
+      Guests have a range of exhilarating activities to choose from, such as rockclimbing, ziplining and river rafting.<br><br>
+      <i class='fas fa-swimmer'></i> Pool: Yes<br>
+      <i class='fas fa-wifi'></i> WiFi: Yes<br>
+      <i class='fas fa-umbrella-beach'></i> Ocean view: No<br>
+      <i class='fas fa-paw'></i> Pets allowed: Yes<br>
+      </p>
+  
+      <div class='card-details'>
+        <div class='card-details-inner'>
+          <div class='read-more'>
+          <form action='email.php' method='post'><button class='button'>Book now</button></form>
+          </div>
+          <div class='reviews'>
+            <div>
+                &#9733 &#9733 &#9733
+            </div>
+            <div>
+                453 reviews
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>";
+} 
 
 ?>    
 

@@ -197,8 +197,16 @@ class Booking {
 if ($_POST['name'] === '' || $_POST['surname'] === '' || $_POST['emailAddress'] === ''
 || $_POST['checkInDate'] === '' || $_POST['checkOutDate'] === ''
 || $_POST['hotel'] === '') {
-    exit('Please fill in the required fields!');
-  }
+    exit("<div class='error-msg'> Please fill in the required fields!</div>");
+}
+
+if ($_POST['checkInDate'] >= $_POST['checkOutDate']) {
+  exit("<div class='error-msg'>Please choose a check-out date that is later than the check-in date.");
+}
+
+if (is_numeric($_POST['name']) || is_numeric($_POST['surname']) || is_numeric($_POST['emailAddress'])) {
+  exit("<div class='error-msg'>This cannot be a number.</div>");
+}
 
 else {
    $booking = new Booking($_SESSION['hotel'], $_SESSION['name'], $_SESSION['surname'], $_SESSION['checkInDate'], $_SESSION['checkOutDate']);

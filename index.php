@@ -133,7 +133,7 @@
   <div class="card-content">
   
     <h1>The Sunset Hotel</h1>
-    <div class="subtitle">A heavenly affair</div>
+    <div class="subtitle">Pure relaxation</div>
     <p class="hotel-info">
     A cosy hotel with stunning ocean views, close to white-sand beaches and crystal clear waters.
     The Sunset Hotel is a five-star establishment, promising maximum comfort and relaxation.<br><br>
@@ -146,7 +146,7 @@
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-          <button class="button modal-btn-1">View Gallery</button>
+          <button class="button modal-btn-3">View Gallery</button>
         </div>
         <div class="reviews">
           <div>
@@ -181,7 +181,7 @@
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-          <button class="button modal-btn-2">View Gallery</button>
+          <button class="button modal-btn-4">View Gallery</button>
         </div>
         <div class="reviews">
           <div>
@@ -222,7 +222,7 @@
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-          <button class="button modal-btn-1">View Gallery</button>
+          <button class="button modal-btn-5">View Gallery</button>
         </div>
         <div class="reviews">
           <div>
@@ -243,9 +243,9 @@
   <div class="card-content">
   
     <h1>Mountain View Hotel</h1>
-    <div class="subtitle">A fun-filled experience</div>
+    <div class="subtitle">A fun-packed experience</div>
     <p>
-    Amidst a spectacular mountain range, The Mountain View Hotel is for the adventourous traveller. 
+    Amidst a spectacular mountain range, this one's for the adventourous traveller. 
     Guests have a range of exhilarating activities to choose from, such as rockclimbing, ziplining and river rafting.<br><br>
     <i class="fas fa-swimmer"></i> Pool: Yes<br>
     <i class="fas fa-wifi"></i> WiFi: Yes<br>
@@ -256,7 +256,7 @@
     <div class="card-details">
       <div class="card-details-inner">
         <div class="read-more">
-          <button class="button modal-btn-2">View Gallery</button>
+          <button class="button modal-btn-6">View Gallery</button>
         </div>
         <div class="reviews">
           <div>
@@ -299,17 +299,17 @@
 
       <div class="item-b">
         <label for="name">First Name</label>
-        <input type="text" name="name" placeholder="Your name">
+        <input class="font-lighter" type="text" name="name" placeholder="Your name">
       </div>
 
       <div class="item-c">
         <label for="surname">Surname</label>
-        <input type="text" name="surname" placeholder="Your surname">
+        <input class="font-lighter" type="text" name="surname" placeholder="Your surname">
       </div>
 
       <div class="item-d">
         <label for="emailAddress">Email Address</label>
-        <input type="text" name="emailAddress" placeholder="Your email address" class="email">
+        <input class="font-lighter" type="text" name="emailAddress" placeholder="Your email address" class="email">
       </div>
 
       <input type="hidden" name="numberOfDays">
@@ -335,9 +335,9 @@
 </div>
 
 <!--MODAL 1-->
-<div class="modal-overlay-1">
+<div id="modal-1" class="modal-overlay">
   <div class="modal-container">
-  <a class="close-btn-1">X</a>
+  <a class="close-btn close-btn-1">X</a>
   </div> 
 
   <!--HOTEL GALLERY-->
@@ -363,7 +363,6 @@
       <div class="cell">
         <img src="images/the-commodore-hotel-6.jpg" class="responsive-image" />
       </div>
-
     </div>
 
 </div>
@@ -371,9 +370,9 @@
 </div>
 
 <!--MODAL 2-->
-<div class="modal-overlay-2">
+<div id="modal-2" class="modal-overlay">
   <div class="modal-container">
-  <a class="close-btn-2">X</a>
+  <a class="close-btn close-btn-2">X</a>
 </div> 
 
   <!--HOTEL GALLERY-->
@@ -397,6 +396,144 @@
     </div>
     <div class="cell">
       <img src="images/the-rustic-hotel-6.jpg" class="responsive-image" />
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+
+<!--MODAL 3-->
+<div id="modal-3" class="modal-overlay">
+  <div class="modal-container">
+  <a class="close-btn close-btn-3">X</a>
+</div> 
+
+  <!--HOTEL GALLERY-->
+<div class="gallery-container">
+
+  <div class="grid">
+    <div class="cell">
+      <img src="images/the-sunset-hotel-1.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-sunset-hotel-2.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-sunset-hotel-3.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-sunset-hotel-4.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-sunset-hotel-5.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/the-sunset-hotel-6.jpg" class="responsive-image" />
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+
+<!--MODAL 4-->
+<div id="modal-4" class="modal-overlay">
+  <div class="modal-container">
+  <a class="close-btn close-btn-4">X</a>
+</div> 
+
+  <!--HOTEL GALLERY-->
+<div class="gallery-container">
+
+  <div class="grid">
+    <div class="cell">
+      <img src="images/tropico-hotel-1.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tropico-hotel-2.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tropico-hotel-3.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tropico-hotel-4.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tropico-hotel-5.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tropico-hotel-6.jpg" class="responsive-image" />
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+<!--MODAL 5-->
+<div id="modal-5" class="modal-overlay">
+  <div class="modal-container">
+  <a class="close-btn close-btn-5">X</a>
+</div> 
+
+  <!--HOTEL GALLERY-->
+<div class="gallery-container">
+
+  <div class="grid">
+    <div class="cell">
+      <img src="images/tranquility-hotel-1.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tranquility-hotel-2.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tranquility-hotel-3.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tranquility-hotel-4.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tranquility-hotel-5.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/tranquility-hotel-6.jpg" class="responsive-image" />
+    </div>
+  </div>
+  
+</div>
+
+</div>
+
+<!--MODAL 6-->
+<div id="modal-6" class="modal-overlay">
+  <div class="modal-container">
+  <a class="close-btn close-btn-6">X</a>
+</div> 
+
+  <!--HOTEL GALLERY-->
+<div class="gallery-container">
+
+  <div class="grid">
+    <div class="cell">
+      <img src="images/mountainview-hotel-1.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/mountainview-hotel-2.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/mountainview-hotel-3.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/mountainview-hotel-4.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/mountainview-hotel-5.jpg" class="responsive-image" />
+    </div>
+    <div class="cell">
+      <img src="images/mountainview-hotel-6.jpg" class="responsive-image" />
     </div>
   </div>
   
