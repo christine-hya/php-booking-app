@@ -108,7 +108,7 @@ a {
 /* BOOKING FORM */
 .booking-form-container {    
     display: block; 
-    /* background: transparent; */
+    background: transparent;
     width: 100%; 
     max-width: 100vw;
     border-radius: 4px;

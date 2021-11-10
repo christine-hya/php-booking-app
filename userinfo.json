@@ -3,9 +3,9 @@
     "name": "Christine",
     "surname": "Hogg",
     "emailAddress": "wordsbychristinehogg@gmail.com",
-    "numberOfDays": "2",
-    "checkInDate": "2021-10-19",
-    "checkOutDate": "2021-10-21",
+    "numberOfDays": "15",
+    "checkInDate": "2021-11-11",
+    "checkOutDate": "2021-11-26",
     "price": 500,
-    "total": 1000
+    "total": 7500
 }

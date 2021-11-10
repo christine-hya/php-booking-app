@@ -197,15 +197,18 @@ class Booking {
 if ($_POST['name'] === '' || $_POST['surname'] === '' || $_POST['emailAddress'] === ''
 || $_POST['checkInDate'] === '' || $_POST['checkOutDate'] === ''
 || $_POST['hotel'] === '') {
-    exit("<div class='error-msg'> Please fill in the required fields!</div>");
+  header('location: ./index.php?error=emptyinput#booking-form');
+    exit();
 }
 
 if ($_POST['checkInDate'] >= $_POST['checkOutDate']) {
-  exit("<div class='error-msg'>Please choose a check-out date that is later than the check-in date.");
+  header('location: ./index.php?error=dateinvalid#booking-form');
+  exit();
 }
 
 if (is_numeric($_POST['name']) || is_numeric($_POST['surname']) || is_numeric($_POST['emailAddress'])) {
-  exit("<div class='error-msg'>This cannot be a number.</div>");
+  header('location: ./index.php?error=notnumber#booking-form');
+  exit();
 }
 
 else {
